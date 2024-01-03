@@ -8,7 +8,7 @@ void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
   WidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('E2E - All app flow', (WidgetTester tester) async {
+  testWidgets('E2E - All App flow', (WidgetTester tester) async {
     // Scenario 1: Check initial state in HomeFormWidget
     await tester.pumpWidget(const MyApp());
     expect(find.byType(HomeFormWidget), findsOneWidget);
