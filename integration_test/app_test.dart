@@ -13,8 +13,8 @@ void main() {
     await tester.pumpWidget(const MyApp());
     expect(find.byType(HomeFormWidget), findsOneWidget);
 
-    // Check the presence of UI elements
-    expect(find.text('Vamos começar!'), findsOneWidget);
+// Check the presence of UI elements
+    expect(find.text('Vamos comecar!'), findsOneWidget);
     expect(find.text('Insira os nomes dos participantes'), findsOneWidget);
     expect(find.byIcon(Icons.person_add_rounded), findsOneWidget);
     expect(find.text('Iniciar brincadeira!'), findsNothing);
